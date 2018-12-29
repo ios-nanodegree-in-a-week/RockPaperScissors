@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     func randomBotMove() -> String {
@@ -88,23 +87,15 @@ class ViewController: UIViewController {
 
         if segue.identifier == "showResults" {
             let controller = segue.destination as! ResultsViewController
-//            controller.winnerFromVC = sender as? String
-//             print("final winner is: \(controller.winnerFromVC)")
             let botChoice: String = randomBotMove()
             let playerChoice: String = getPlayerChoice((sender as? UIButton)!)
             
             let winner: String = findWinner(botChoice, playerChoice)
             
-            print("Bot choice is: \(botChoice)")
-            print("Player choice is: \(playerChoice)")
-            print("Winner is: \(winner)")
-            
             controller.botChoiceFromVC = botChoice
             controller.playerChoiceFromVC = playerChoice
             controller.winnerFromVC = winner
         }
-
     }
-    
 }
 

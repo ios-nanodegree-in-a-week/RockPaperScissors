@@ -170,6 +170,7 @@
                     <connections>
                         <outlet property="BotChoice" destination="ei3-IP-HYU" id="9oL-UJ-AyA"/>
                         <outlet property="PlayerChoice" destination="yjh-pA-Brl" id="2VZ-ac-dRN"/>
+                        <outlet property="playAgain" destination="LQL-JE-T3H" id="K6a-TP-1Ry"/>
                         <outlet property="winner" destination="jcj-JL-NE8" id="7VI-IA-utT"/>
                     </connections>
                 </viewController>
